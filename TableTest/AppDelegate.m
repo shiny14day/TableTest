@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "FirstView.h"
+
 
 @interface AppDelegate ()
 
@@ -15,8 +17,17 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOption{
+    //윈도우 생성
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    
+    //테이블뷰 컨트롤러 생성
+    FirstView *fView = [[FirstView alloc]init];
+    [fView.view setBackgroundColor:[UIColor redColor]];
+    self.window.rootViewController = fView;
+
     return YES;
 }
 
