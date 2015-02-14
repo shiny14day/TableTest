@@ -22,7 +22,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
-    
+    sleep(1);
     //테이블뷰 컨트롤러 생성
     FirstView *fView = [[FirstView alloc]init];
     [fView.view setBackgroundColor:[UIColor redColor]];

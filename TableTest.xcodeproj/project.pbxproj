@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6801BC191A8F20F600397162 /* taking_pic.png in Resources */ = {isa = PBXBuildFile; fileRef = 6801BC181A8F20F600397162 /* taking_pic.png */; };
+		6801BC1B1A8F298100397162 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 6801BC1A1A8F298100397162 /* menu.png */; };
+		6801BC1D1A8F2AF400397162 /* button_close.png in Resources */ = {isa = PBXBuildFile; fileRef = 6801BC1C1A8F2AF400397162 /* button_close.png */; };
+		6801BC1F1A8F2E8E00397162 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6801BC1E1A8F2E8E00397162 /* Default.png */; };
+		6801BC211A8F317700397162 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6801BC201A8F317700397162 /* Default@2x.png */; };
 		686C7DD01A86940100FFEBAA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 686C7DCF1A86940100FFEBAA /* main.m */; };
 		686C7DD31A86940100FFEBAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 686C7DD21A86940100FFEBAA /* AppDelegate.m */; };
 		686C7DDB1A86940100FFEBAA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 686C7DDA1A86940100FFEBAA /* Images.xcassets */; };
-		686C7DDE1A86940100FFEBAA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 686C7DDC1A86940100FFEBAA /* LaunchScreen.xib */; };
 		686C7DEA1A86940100FFEBAA /* TableTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 686C7DE91A86940100FFEBAA /* TableTestTests.m */; };
 		686C7DFB1A876E6300FFEBAA /* FirstView.m in Sources */ = {isa = PBXBuildFile; fileRef = 686C7DFA1A876E6300FFEBAA /* FirstView.m */; };
-		686C7DFE1A88E07A00FFEBAA /* CameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = 686C7DFD1A88E07A00FFEBAA /* CameraView.m */; };
+		6898A0A91A8F48FB00741933 /* setting_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6898A0A81A8F48FB00741933 /* setting_1.png */; };
+		6898A0AD1A8F4BDB00741933 /* button_album.png in Resources */ = {isa = PBXBuildFile; fileRef = 6898A0AC1A8F4BDB00741933 /* button_album.png */; };
+		6898A0AF1A8F4C5200741933 /* button_camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 6898A0AE1A8F4C5200741933 /* button_camera.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,20 +33,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6801BC181A8F20F600397162 /* taking_pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = taking_pic.png; sourceTree = "<group>"; };
+		6801BC1A1A8F298100397162 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		6801BC1C1A8F2AF400397162 /* button_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_close.png; sourceTree = "<group>"; };
+		6801BC1E1A8F2E8E00397162 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		6801BC201A8F317700397162 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		686C7DCA1A86940100FFEBAA /* TableTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		686C7DCE1A86940100FFEBAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		686C7DCF1A86940100FFEBAA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		686C7DD11A86940100FFEBAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		686C7DD21A86940100FFEBAA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		686C7DDA1A86940100FFEBAA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		686C7DDD1A86940100FFEBAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		686C7DE31A86940100FFEBAA /* TableTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		686C7DE81A86940100FFEBAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		686C7DE91A86940100FFEBAA /* TableTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableTestTests.m; sourceTree = "<group>"; };
 		686C7DF91A876E6300FFEBAA /* FirstView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstView.h; sourceTree = "<group>"; };
 		686C7DFA1A876E6300FFEBAA /* FirstView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstView.m; sourceTree = "<group>"; };
-		686C7DFC1A88E07A00FFEBAA /* CameraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraView.h; sourceTree = "<group>"; };
-		686C7DFD1A88E07A00FFEBAA /* CameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraView.m; sourceTree = "<group>"; };
+		6898A0A81A8F48FB00741933 /* setting_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setting_1.png; sourceTree = "<group>"; };
+		6898A0AC1A8F4BDB00741933 /* button_album.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_album.png; sourceTree = "<group>"; };
+		6898A0AE1A8F4C5200741933 /* button_camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_camera.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +72,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6801BC171A8F20CB00397162 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				6801BC1E1A8F2E8E00397162 /* Default.png */,
+				6801BC201A8F317700397162 /* Default@2x.png */,
+				6801BC1A1A8F298100397162 /* menu.png */,
+				6801BC1C1A8F2AF400397162 /* button_close.png */,
+				6898A0AE1A8F4C5200741933 /* button_camera.png */,
+				6898A0AC1A8F4BDB00741933 /* button_album.png */,
+				6801BC181A8F20F600397162 /* taking_pic.png */,
+				6898A0A81A8F48FB00741933 /* setting_1.png */,
+			);
+			name = image;
+			sourceTree = "<group>";
+		};
 		686C7DC11A86940100FFEBAA = {
 			isa = PBXGroup;
 			children = (
@@ -82,14 +108,12 @@
 		686C7DCC1A86940100FFEBAA /* TableTest */ = {
 			isa = PBXGroup;
 			children = (
+				6801BC171A8F20CB00397162 /* image */,
 				686C7DD11A86940100FFEBAA /* AppDelegate.h */,
 				686C7DD21A86940100FFEBAA /* AppDelegate.m */,
 				686C7DF91A876E6300FFEBAA /* FirstView.h */,
 				686C7DFA1A876E6300FFEBAA /* FirstView.m */,
-				686C7DFC1A88E07A00FFEBAA /* CameraView.h */,
-				686C7DFD1A88E07A00FFEBAA /* CameraView.m */,
 				686C7DDA1A86940100FFEBAA /* Images.xcassets */,
-				686C7DDC1A86940100FFEBAA /* LaunchScreen.xib */,
 				686C7DCD1A86940100FFEBAA /* Supporting Files */,
 			);
 			path = TableTest;
@@ -201,8 +225,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				686C7DDE1A86940100FFEBAA /* LaunchScreen.xib in Resources */,
+				6801BC1B1A8F298100397162 /* menu.png in Resources */,
+				6801BC211A8F317700397162 /* Default@2x.png in Resources */,
+				6801BC1D1A8F2AF400397162 /* button_close.png in Resources */,
+				6801BC191A8F20F600397162 /* taking_pic.png in Resources */,
+				6801BC1F1A8F2E8E00397162 /* Default.png in Resources */,
+				6898A0A91A8F48FB00741933 /* setting_1.png in Resources */,
 				686C7DDB1A86940100FFEBAA /* Images.xcassets in Resources */,
+				6898A0AF1A8F4C5200741933 /* button_camera.png in Resources */,
+				6898A0AD1A8F4BDB00741933 /* button_album.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,7 +254,6 @@
 				686C7DFB1A876E6300FFEBAA /* FirstView.m in Sources */,
 				686C7DD31A86940100FFEBAA /* AppDelegate.m in Sources */,
 				686C7DD01A86940100FFEBAA /* main.m in Sources */,
-				686C7DFE1A88E07A00FFEBAA /* CameraView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,17 +274,6 @@
 			targetProxy = 686C7DE41A86940100FFEBAA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		686C7DDC1A86940100FFEBAA /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				686C7DDD1A86940100FFEBAA /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		686C7DEB1A86940100FFEBAA /* Debug */ = {
@@ -337,6 +356,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				INFOPLIST_FILE = TableTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -347,6 +367,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				INFOPLIST_FILE = TableTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -406,6 +427,7 @@
 				686C7DEF1A86940100FFEBAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		686C7DF01A86940100FFEBAA /* Build configuration list for PBXNativeTarget "TableTestTests" */ = {
 			isa = XCConfigurationList;
@@ -414,6 +436,7 @@
 				686C7DF21A86940100FFEBAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

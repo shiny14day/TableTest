@@ -7,17 +7,23 @@
 //
 
 #import "FirstView.h"
-#import "CameraView.h"
-
-
+#import <MobileCoreServices/MobileCoreServices.h>
 @interface FirstView()
+
+@property (strong, nonatomic) UIButton *closeBtn;
+@property (strong, nonatomic) UIButton *cameraBtn;
+@property (strong, nonatomic) UIButton *albumBtn;
+@property (strong, nonatomic) UIButton *settingBtn;
+
 
 @end
 
 @implementation FirstView
 
+
+
 - (void)viewDidLoad {
-    
+
     [super viewDidLoad];
     //테이블뷰 생성
     CGFloat x = 0;
@@ -29,26 +35,79 @@
     tableView.rowHeight = 120;
     tableView.delegate = self;
     tableView.dataSource = self;
+    tableView.backgroundColor = [UIColor darkGrayColor];
     [self.view addSubview:tableView];
     
-    //네비게이션용 뷰 생성
     
-    
-    
-    //버튼 생성
+    //menu button
     UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [button addTarget:self
-               action:@selector(takeVideo)
-     forControlEvents:UIControlEventTouchDown];
-    [button setTitle:@"Menu" forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(menuView:) forControlEvents:UIControlEventTouchDown];
+    UIImage *menuButton = [UIImage imageNamed:@"menu.png"];
     button.frame = CGRectMake(0.0, 10.0, 60.0, 50.0);
+    [button setBackgroundImage:menuButton forState:UIControlStateNormal];
     [self.view addSubview:button];
 
 }
 
-//hello
+-(IBAction)menuView:(id)sender{
+    _menuView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 640, 1136)];
+    _menuView.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:_menuView];
+    
+    //close Button
+    _closeBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [_closeBtn addTarget:self action:@selector(viewClose:) forControlEvents:UIControlEventTouchDown];
+    UIImage *closeButton = [UIImage imageNamed:@"button_close.png"];
+    [_closeBtn setBackgroundImage:closeButton forState:UIControlStateNormal];
+    _closeBtn.frame = CGRectMake(0.0, 10.0, 60.0, 50.0);
+    [self.view addSubview:_closeBtn];
+    
+    //camera Button
+    _cameraBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [_cameraBtn addTarget:self action:@selector(goCamera:) forControlEvents:UIControlEventTouchDown];
+    UIImage *buttonImage = [UIImage imageNamed:@"button_camera"];
+    _cameraBtn.frame = CGRectMake(110.0, 110.0, 100.0, 90.0);
+    [_cameraBtn setBackgroundImage:buttonImage forState:UIControlStateNormal];
+    [self.view addSubview:_cameraBtn];
+    
+    //album Button
+    _albumBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [_albumBtn addTarget:self action:@selector(goAlbum:) forControlEvents:UIControlEventTouchDown];
+    UIImage *albumImage = [UIImage imageNamed:@"button_album"];
+    _albumBtn.frame = CGRectMake(110.0, 215.0, 100.0, 90.0);
+    [_albumBtn setBackgroundImage:albumImage forState:UIControlStateNormal];
+    [self.view addSubview:_albumBtn];
+    
+    //setting Button
+    _settingBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [_settingBtn addTarget:self action:@selector(goSetting:) forControlEvents:UIControlEventTouchDown];
+    UIImage *settingImage = [UIImage imageNamed:@"setting_1.png"];
+    _settingBtn.frame = CGRectMake(110.0, 320.0, 100.0, 90.0);
+    [_settingBtn setBackgroundImage:settingImage forState:UIControlStateNormal];
+    [self.view addSubview:_settingBtn];
+    
+    
+    
+     
+}
 
--(IBAction)takeVideo{
+-(IBAction)viewClose:(id)sender{
+    [_menuView removeFromSuperview];
+    [_closeBtn removeFromSuperview];
+    [_cameraBtn removeFromSuperview];
+    [_albumBtn removeFromSuperview];
+    [_settingBtn removeFromSuperview];
+}
+
+-(IBAction)goSetting:(id)sender{
+    
+}
+
+-(IBAction)goAlbum:(id)sender{
+    
+}
+
+-(IBAction)goCamera:(id)sender{
     [self startCameraControllerFromViewController: self
                                     usingDelegate: self];
 }
@@ -147,7 +206,12 @@
     return self.books.count;
 }
 
-
+- (BOOL)shouldAutorotate {
+    return YES;
+}
+- (NSUInteger)supportedInterfaceOrientations {
+    return (UIInterfaceOrientationMaskPortrait);
+}
 
 /*
 #pragma mark - Navigation

@@ -16,6 +16,9 @@
 @property (nonatomic, strong) NSArray *books;
 @property (nonatomic, strong) UIButton *navBar;
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
+@property (strong, nonatomic) UIView *menuView;
+
+
 
 - (BOOL) startCameraControllerFromViewController: (UIViewController*) controller
                                    usingDelegate: (id <UIImagePickerControllerDelegate,
